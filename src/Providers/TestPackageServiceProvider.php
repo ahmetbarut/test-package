@@ -11,7 +11,8 @@ class TestPackageServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'test-package');
         $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
-        // commit atalım
+        // commit atalım 
+        // asd
         $this->publishes([
             __DIR__ . '/../../resources/views/' => resource_path('views/vendor/test-package'),
         ], 'test-package-views');
